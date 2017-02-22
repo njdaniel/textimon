@@ -1,12 +1,15 @@
+#!/Users/nicholas/PycharmProjects/textimon/textimonenv/bin/python
 import kivy
+kivy.require('1.9.0')
 
 from kivy.app import App
-from kivy.uix.label import Label
+from kivy.uix.button import Label
 
 class Intro(App):
 
-    def run(self):
+    def build(self):
         return Label(text='Test This')
 
 if __name__=='__main__':
-    Intro().run()
+    intro = Intro()
+    intro.run()
